@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import './media.css'
 
-class Media extends Component {
+class Media extends PureComponent {
   // es6
   // constructor (props) {
   //   super(props)
@@ -28,7 +28,7 @@ class Media extends Component {
       <div className="Media" onClick={this.handleClick}>
         <div className="Media-cover">
           <img 
-            src={this.props.image}
+            src={this.props.cover}
             alt=""
             width={260}
             height={160}
